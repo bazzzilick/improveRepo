@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Локализованное приложение</string>
+    <string name="pushkin_poem">Sorry, there is nothing</string>
+    <string name="versionAPI_button_text" translatable="false">Боль и уныние</string>
+    <string name="button_text" translatable="false">Кнопка 1</string>
+</resources>

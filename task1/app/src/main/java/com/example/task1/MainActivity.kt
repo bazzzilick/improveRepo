@@ -10,9 +10,9 @@ import com.google.android.material.button.MaterialButton
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var editText  : EditText;
-    private lateinit var textView  : TextView;
-    private lateinit var addButton : MaterialButton;
+    private lateinit var editText: EditText;
+    private lateinit var textView: TextView;
+    private lateinit var addButton: MaterialButton;
     private lateinit var viewButton: MaterialButton;
     private lateinit var nextButton: MaterialButton;
 

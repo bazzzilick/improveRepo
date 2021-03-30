@@ -14,31 +14,11 @@ import android.widget.Toast.makeText as makeText1
 
 class SecondActivity : AppCompatActivity() {
 
-    private lateinit var editText  : EditText;
-    private lateinit var textView  : TextView;
+    private lateinit var editText: EditText;
+    private lateinit var textView: TextView;
     private lateinit var viewButton: MaterialButton;
 
     private val students = HashMap<Int, Student>()
-
-    class Student(_name : String, _surName : String, _grade : String, _birthdayYear : String) {
-        var id : Int = 0
-            private set
-        var name : String = ""
-            private set
-        var surName : String = ""
-            private set
-        var grade : String = ""
-            private set
-        var birthdayYear : String = ""
-            private set
-        init{
-            id = System.currentTimeMillis().toInt() % 1000;
-            name = _name
-            surName = _surName
-            grade = _grade
-            birthdayYear = _birthdayYear
-        }
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -67,7 +47,7 @@ class SecondActivity : AppCompatActivity() {
 
         viewButton.setOnClickListener {
             textView.text = ""
-            for (it in  students)
+            for (it in students)
                 textView.append(it.key.toString() + " " + it.value.name + " " + it.value.surName
                         + " " + it.value.grade + " " + it.value.birthdayYear + "\n")
             makeText1(this, getString(R.string.view_complete), Toast.LENGTH_LONG).show()
